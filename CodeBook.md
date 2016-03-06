@@ -16,13 +16,13 @@ This analysis produced two new data sets based on the original data above:
 
 ## New Variables ##
 
-subject:
+_subject_:
 	Subject identifier (integer)
 
-group
+_group_:
 	Group, either "test" or "training" (string)
 
-activityLabel
+_activityLabel_:
 	Type of activity, one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING (string)
 
 ## Original Variables ##
