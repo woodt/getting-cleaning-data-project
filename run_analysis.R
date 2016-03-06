@@ -61,3 +61,8 @@ tidy_set_1 <- tbl_df(join_sets(training_set, test_set))
 tidy_set_2 <- tidy_set_1 %>%
   group_by(subject, activityLabel) %>% 
   summarize_each(funs(mean), -group)
+
+# write out the two new data sets
+
+write.csv(tidy_set_1, "tidy_set_1.csv", row.names=FALSE)
+write.csv(tidy_set_2, "tidy_set_2.csv", row.names=FALSE)
